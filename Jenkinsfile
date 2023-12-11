@@ -105,6 +105,7 @@ pipeline {
                 stage('Unit Tests') {
                     steps {
                         sh './gradlew -PenableCoverage -Pjenkins jacocoTestDebugUnitTestReport'
+                        sh "echo haris is here"
                     }
                     post {
                         always {
